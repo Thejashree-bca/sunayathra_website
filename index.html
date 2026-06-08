@@ -1,55 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sunayatra Solutions</title>
-    <style>
-        body{
-            margin:0;
-            background:#0A2342;
-            color:white;
-            font-family:Arial,sans-serif;
-            text-align:center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .hero{
-            height:100vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-        }
+<title>Sunayatra Solutions</title>
 
-        h1{
-            color:#D4AF37;
-            font-size:60px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
-        p{
-            font-size:24px;
-        }
+<style>
 
-        .btn{
-            background:#D4AF37;
-            color:#0A2342;
-            padding:15px 30px;
-            text-decoration:none;
-            border-radius:10px;
-            font-weight:bold;
-        }
-    </style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(10,35,66,.55),
+    rgba(10,35,66,.75)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-box{
+    border:3px solid white;
+    padding:10px 18px;
+    font-weight:600;
+    text-transform:lowercase;
+}
+
+.brand h2{
+    font-size:18px;
+}
+
+.brand p{
+    font-size:11px;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#D4AF37;
+}
+
+.hero-content{
+    max-width:650px;
+    margin-left:80px;
+    margin-top:140px;
+}
+
+.company{
+    color:#D4AF37;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:90px;
+    line-height:0.95;
+    margin-bottom:30px;
+}
+
+.subtitle{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn-gold{
+    background:#D4AF37;
+    color:#0A2342;
+    padding:16px 35px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+    padding:16px 35px;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.info-box{
+    position:absolute;
+    bottom:40px;
+    right:60px;
+    background:rgba(10,35,66,.85);
+    padding:25px;
+    border-left:4px solid #D4AF37;
+    max-width:320px;
+}
+
+.info-box h4{
+    color:#D4AF37;
+    margin-bottom:12px;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.info-box p{
+    line-height:1.6;
+}
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content{
+    margin:50px 25px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.subtitle{
+    font-size:16px;
+}
+
+.info-box{
+    display:none;
+}
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="hero">
-    <h1>SUNAYATRA SOLUTIONS PRIVATE LIMITED</h1>
-    <p>Your Journey Begins Here</p>
+<section class="hero">
 
-    <a class="btn"
-       href="https://wa.me/919187382067">
-       Contact on WhatsApp
-    </a>
+<nav>
+
+<div class="logo">
+
+<div class="logo-box">
+sunayatra
 </div>
+
+<div class="brand">
+<h2>SUNAYATRA</h2>
+<p>Your Journey Begins Here</p>
+</div>
+
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Tour Packages</a>
+<a href="#">Cab Booking</a>
+<a href="#">Hotel Booking</a>
+<a href="#">Flight Booking</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<p class="company">
+SUNAYATRA SOLUTIONS PRIVATE LIMITED
+</p>
+
+<h1>
+Explore<br>
+Karnataka &<br>
+Beyond
+</h1>
+
+<p class="subtitle">
+Tour Packages, Cab Booking, Hotel Booking,
+Flight Booking, Trekking Trips &
+Corporate Tours
+</p>
+
+<div class="buttons">
+<a href="tel:+919187382067" class="btn-gold">
+Call Now
+</a>
+
+<a href="#" class="btn-outline">
+View Services
+</a>
+</div>
+
+</div>
+
+<div class="info-box">
+
+<h4>PREMIUM TRAVEL CONCIERGE</h4>
+
+<p>
+Curated journeys for families,
+teams, explorers, and executives.
+</p>
+
+</div>
+
+</section>
+
+<a class="whatsapp"
+href="https://wa.me/919187382067"
+target="_blank">
+WA
+</a>
 
 </body>
 </html>
