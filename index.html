@@ -90,18 +90,23 @@ Explore Packages
 <section class="stats">
 
 <div class="stat-card">
+<h2 class="counter" data-target="1000">0</h2>
+<p>Happy Travelers</p>
+</div>
+
+<div class="stat-card">
+<h2 class="counter" data-target="50">0</h2>
+<p>Destinations</p>
+</div>
+
+<div class="stat-card">
 <h2>24/7</h2>
 <p>Travel Support</p>
 </div>
 
 <div class="stat-card">
-<h2>50+</h2>
-<p>Destinations</p>
-</div>
-
-<div class="stat-card">
-<h2>1000+</h2>
-<p>Happy Travelers</p>
+<h2 class="counter" data-target="100">0</h2>
+<p>Corporate Tours</p>
 </div>
 
 </section>
@@ -145,7 +150,7 @@ Explore Packages
 
     <div class="service-grid">
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-earth-asia"></i>
             </div>
@@ -157,7 +162,7 @@ Explore Packages
             </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-car"></i>
             </div>
@@ -169,7 +174,7 @@ Explore Packages
             </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-hotel"></i>
             </div>
@@ -181,7 +186,7 @@ Explore Packages
             </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-plane"></i>
             </div>
@@ -193,7 +198,7 @@ Explore Packages
             </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-mountain"></i>
             </div>
@@ -205,7 +210,7 @@ Explore Packages
             </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up">
             <div class="service-icon">
                 <i class="fa-solid fa-briefcase"></i>
             </div>
@@ -228,7 +233,7 @@ Explore Packages
 
     <div class="destination-grid">
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/coorg.jpg" alt="Coorg">
 
             <div class="destination-content">
@@ -239,7 +244,7 @@ Explore Packages
             </div>
         </div>
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/chikmagalur.jpg" alt="Chikmagalur">
 
             <div class="destination-content">
@@ -250,7 +255,7 @@ Explore Packages
             </div>
         </div>
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/ooty.jpg" alt="Ooty">
 
             <div class="destination-content">
@@ -261,7 +266,7 @@ Explore Packages
             </div>
         </div>
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/goa.jpg" alt="Goa">
 
             <div class="destination-content">
@@ -272,7 +277,7 @@ Explore Packages
             </div>
         </div>
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/kerala.jpg" alt="Kerala">
 
             <div class="destination-content">
@@ -283,7 +288,7 @@ Explore Packages
             </div>
         </div>
 
-        <div class="destination-card">
+        <div class="destination-card" data-aos="zoom-in">
             <img src="images/kashmir.jpg" alt="Kashmir">
 
             <div class="destination-content">
@@ -305,7 +310,7 @@ Explore Packages
 
     <div class="testimonial-grid">
 
-        <div class="review-card">
+       <div class="review-card" data-aos="flip-left">
 
             <div class="stars">
                 ★★★★★
@@ -321,7 +326,7 @@ Explore Packages
 
         </div>
 
-        <div class="review-card">
+       <div class="review-card" data-aos="flip-left">
 
             <div class="stars">
                 ★★★★★
@@ -337,8 +342,7 @@ Explore Packages
 
         </div>
 
-        <div class="review-card">
-
+        <div class="review-card" data-aos="flip-left">
             <div class="stars">
                 ★★★★★
             </div>
@@ -366,7 +370,7 @@ Explore Packages
 
         <div class="contact-info">
 
-            <div class="contact-card">
+            <div class="contact-card" data-aos="fade-right">
                 <i class="fa-solid fa-phone"></i>
 
                 <h3>Call Us</h3>
@@ -374,7 +378,7 @@ Explore Packages
                 <p>+91 91873 82067</p>
             </div>
 
-            <div class="contact-card">
+            <div class="contact-card" data-aos="fade-right">>
                 <i class="fa-brands fa-whatsapp"></i>
 
                 <h3>WhatsApp</h3>
@@ -382,7 +386,7 @@ Explore Packages
                 <p>+91 91873 82067</p>
             </div>
 
-            <div class="contact-card">
+            <div class="contact-card" data-aos="fade-right">
                 <i class="fa-solid fa-envelope"></i>
 
                 <h3>Email</h3>
@@ -428,7 +432,7 @@ Explore Packages
 
 </section>
 
-<footer id="contact">
+<footer>
 
 <img src="images/logo.png">
 
@@ -463,6 +467,16 @@ once:true
 });
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+<a class="whatsapp"
+href="https://wa.me/919187382067"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
 
 </body>
 </html>
