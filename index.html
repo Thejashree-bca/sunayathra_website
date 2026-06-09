@@ -1,278 +1,250 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sunayatra Solutions</title>
+<title>SUNAYATRA SOLUTIONS PRIVATE LIMITED</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-body{
-    font-family:'Poppins',sans-serif;
-}
-
-.hero{
-    height:100vh;
-    background:
-    linear-gradient(rgba(10,35,66,.55),
-    rgba(10,35,66,.75)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
-    background-size:cover;
-    background-position:center;
-    color:white;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 80px;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo-box{
-    border:3px solid white;
-    padding:10px 18px;
-    font-weight:600;
-    text-transform:lowercase;
-}
-
-.brand h2{
-    font-size:18px;
-}
-
-.brand p{
-    font-size:11px;
-}
-
-.menu{
-    display:flex;
-    gap:30px;
-}
-
-.menu a{
-    text-decoration:none;
-    color:white;
-    font-weight:500;
-    transition:.3s;
-}
-
-.menu a:hover{
-    color:#D4AF37;
-}
-
-.hero-content{
-    max-width:650px;
-    margin-left:80px;
-    margin-top:140px;
-}
-
-.company{
-    color:#D4AF37;
-    letter-spacing:3px;
-    font-size:14px;
-    font-weight:600;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:90px;
-    line-height:0.95;
-    margin-bottom:30px;
-}
-
-.subtitle{
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:40px;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-}
-
-.btn-gold{
-    background:#D4AF37;
-    color:#0A2342;
-    padding:16px 35px;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:600;
-}
-
-.btn-outline{
-    border:1px solid white;
-    color:white;
-    padding:16px 35px;
-    text-decoration:none;
-    border-radius:6px;
-}
-
-.info-box{
-    position:absolute;
-    bottom:40px;
-    right:60px;
-    background:rgba(10,35,66,.85);
-    padding:25px;
-    border-left:4px solid #D4AF37;
-    max-width:320px;
-}
-
-.info-box h4{
-    color:#D4AF37;
-    margin-bottom:12px;
-    font-size:12px;
-    letter-spacing:2px;
-}
-
-.info-box p{
-    line-height:1.6;
-}
-
-.whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:65px;
-    height:65px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
-    box-shadow:0 0 20px rgba(0,0,0,.3);
-}
-
-@media(max-width:768px){
-
-nav{
-    flex-direction:column;
-    gap:20px;
-    padding:20px;
-}
-
-.menu{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero-content{
-    margin:50px 25px;
-}
-
-.hero h1{
-    font-size:55px;
-}
-
-.subtitle{
-    font-size:16px;
-}
-
-.info-box{
-    display:none;
-}
-}
-
-</style>
 </head>
-
 <body>
 
-<section class="hero">
+<header>
 
 <nav>
 
 <div class="logo">
 
-<div class="logo-box">
-sunayatra
-</div>
+<img src="images/logo.png">
 
-<div class="brand">
+<div>
 <h2>SUNAYATRA</h2>
 <p>Your Journey Begins Here</p>
 </div>
 
 </div>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Tour Packages</a>
-<a href="#">Cab Booking</a>
-<a href="#">Hotel Booking</a>
-<a href="#">Flight Booking</a>
-<a href="#">Contact</a>
-</div>
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#services">Tour Packages</a></li>
+<li><a href="#services">Cab Booking</a></li>
+<li><a href="#services">Hotel Booking</a></li>
+<li><a href="#services">Flight Booking</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
 
 </nav>
 
-<div class="hero-content">
+<div class="hero">
 
 <p class="company">
 SUNAYATRA SOLUTIONS PRIVATE LIMITED
 </p>
 
 <h1>
-Explore<br>
-Karnataka &<br>
-Beyond
+Explore Karnataka & Beyond
 </h1>
 
 <p class="subtitle">
+
 Tour Packages, Cab Booking, Hotel Booking,
 Flight Booking, Trekking Trips &
 Corporate Tours
+
 </p>
 
 <div class="buttons">
-<a href="tel:+919187382067" class="btn-gold">
-Call Now
-</a>
 
-<a href="#" class="btn-outline">
-View Services
-</a>
+<a href="https://wa.me/919187382067"
+class="gold-btn">
+Book Your Trip </a>
+
+<a href="#services"
+class="outline-btn">
+Explore Packages </a>
+
 </div>
 
 </div>
 
-<div class="info-box">
+</header>
 
-<h4>PREMIUM TRAVEL CONCIERGE</h4>
+<section class="stats">
 
-<p>
-Curated journeys for families,
-teams, explorers, and executives.
-</p>
+<div class="stat-card">
+<h2>24/7</h2>
+<p>Travel Support</p>
+</div>
+
+<div class="stat-card">
+<h2>50+</h2>
+<p>Destinations</p>
+</div>
+
+<div class="stat-card">
+<h2>1000+</h2>
+<p>Happy Travelers</p>
+</div>
+
+</section>
+
+<section class="why-us">
+
+<h5>WHY CHOOSE US</h5>
+
+<h2>Premium Travel Solutions</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Trusted Experts</h3>
+<p>Professional travel planning and support.</p>
+</div>
+
+<div class="feature">
+<h3>Personalized Packages</h3>
+<p>Trips designed around your needs.</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Luxury</h3>
+<p>Premium experiences at competitive prices.</p>
+</div>
+
+<div class="feature">
+<h3>24×7 Support</h3>
+<p>We're always available for you.</p>
+</div>
 
 </div>
 
 </section>
 
+<section id="services">
+
+<h5>SERVICES</h5>
+
+<h2>Premium Travel Solutions</h2>
+
+</section>
+
+<section class="destinations">
+
+<h5>DESTINATIONS</h5>
+
+<h2>Signature Escapes</h2>
+
+</section>
+
+<section class="testimonials">
+
+<h5>TESTIMONIALS</h5>
+
+<h2>Happy Travelers</h2>
+
+<div class="review">
+
+★★★★★
+
+<p>
+Excellent service and smooth trip planning.
+Highly recommended.
+</p>
+
+<h4>Rakesh Kumar</h4>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+Professional cab and hotel arrangements.
+Amazing experience.
+</p>
+
+<h4>Priya S</h4>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h5>CONTACT</h5>
+
+<h2>
+Plan Your Next Journey With Sunayatra
+</h2>
+
+<div class="contact-card">
+
+<h3>
+Phone:
++91 91873 82067
+</h3>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+WhatsApp:
++91 91873 82067
+</h3>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+Email:
+contact.sunayathra@gmail.com
+</h3>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="images/logo.png">
+
+<h3>
+SUNAYATRA SOLUTIONS PRIVATE LIMITED
+</h3>
+
+<p>
+Phone:
++91 91873 82067
+</p>
+
+<p>
+Email:
+contact.sunayathra@gmail.com
+</p>
+
+</footer>
+
 <a class="whatsapp"
-href="https://wa.me/919187382067"
-target="_blank">
-WA
+href="https://wa.me/919187382067">
+
+<i class="fa-brands fa-whatsapp"></i>
+
 </a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
