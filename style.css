@@ -76,7 +76,7 @@ header{
     background:
     linear-gradient(rgba(10,35,66,.65),
     rgba(10,35,66,.7)),
-    url("images/hero.jpg");
+    url("images/hero.png");
 
     background-size:cover;
     background-position:center;
@@ -666,6 +666,15 @@ section h2{
 .contact-card h3{
 
     margin-bottom:10px;
+    color: #0A2342;   /* Navy Blue */
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #333333;   /* Dark Gray */
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .inquiry-form{
